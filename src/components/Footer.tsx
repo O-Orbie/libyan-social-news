@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">LIBYA<span className="text-primary">NEWS</span></h3>
+            <h3 className="text-xl font-bold mb-4">Only<span className="text-primary">Libya</span></h3>
             <p className="text-gray-300 mb-4">
               منصة إخبارية ليبية مستقلة تهدف إلى تقديم أخبار موثوقة وتغطية شاملة للأحداث في ليبيا والعالم العربي.
             </p>
@@ -40,9 +40,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-300 hover:text-white transition-colors">الصفحة الرئيسية</a></li>
               <li><a href="#latest" className="text-gray-300 hover:text-white transition-colors">أحدث الأخبار</a></li>
-              <li><a href="#politics" className="text-gray-300 hover:text-white transition-colors">سياسة</a></li>
-              <li><a href="#economy" className="text-gray-300 hover:text-white transition-colors">اقتصاد</a></li>
-              <li><a href="#sports" className="text-gray-300 hover:text-white transition-colors">رياضة</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">من نحن</a></li>
             </ul>
           </div>
@@ -74,7 +71,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={18} className="text-primary" />
-                <span className="text-gray-300">info@libyanews.com</span>
+                <span className="text-gray-300">info@onlylibya.com</span>
               </li>
             </ul>
           </div>
@@ -86,7 +83,7 @@ const Footer = () => {
         <div className="news-container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-300 mb-2 md:mb-0">
-              &copy; {currentYear} Libya News. جميع الحقوق محفوظة لليبيا.
+              &copy; {currentYear} OnlyLibya. جميع الحقوق محفوظة لليبيا.
             </div>
             <div className="text-sm text-gray-300 flex space-x-4">
               <a href="#" className="hover:text-white transition-colors">سياسة الخصوصية</a>
