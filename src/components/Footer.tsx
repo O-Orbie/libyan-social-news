@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Only<span className="text-primary">Libya</span></h3>
+            <h3 className="text-xl font-bold mb-4">ليبيا <span className="text-primary">فقط</span></h3>
             <p className="text-gray-300 mb-4">
               منصة إخبارية ليبية مستقلة تهدف إلى تقديم أخبار موثوقة وتغطية شاملة للأحداث في ليبيا والعالم العربي.
             </p>
@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="news-container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-300 mb-2 md:mb-0">
-              &copy; {currentYear} OnlyLibya. جميع الحقوق محفوظة لليبيا.
+              &copy; {currentYear} ليبيا فقط. جميع الحقوق محفوظة لليبيا.
             </div>
             <div className="text-sm text-gray-300 flex space-x-4">
               <a href="#" className="hover:text-white transition-colors">سياسة الخصوصية</a>

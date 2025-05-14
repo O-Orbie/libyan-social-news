@@ -17,7 +17,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-accent">Only<span className="text-primary">Libya</span></span>
+              <span className="text-2xl font-bold text-accent">ليبيا <span className="text-primary">فقط</span></span>
             </a>
           </div>
 
