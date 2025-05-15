@@ -15,7 +15,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/libyan-social-news">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/article/:id" element={<ArticleDetail />} />

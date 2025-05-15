@@ -16,7 +16,7 @@ const Hero = () => {
           </div>
           <div className='rounded-lg overflow-hidden shadow-xl animate-fade-in'>
             <img
-              src='/hero.jpg'
+              src='/libyan-social-news/hero.jpg'
               alt='Only Libya'
               className='w-full h-[300px] md:h-[400px] object-contain object-center'
             />
