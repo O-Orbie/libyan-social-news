@@ -22,18 +22,46 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="/" className="text-gray-800 hover:text-primary font-medium transition-colors">الرئيسية</a>
-            <a href="#latest" className="text-gray-800 hover:text-primary font-medium transition-colors">أحدث الأخبار</a>
-            <a href="#about" className="text-gray-800 hover:text-primary font-medium transition-colors">من نحن</a>
+          <nav className="hidden md:flex space-x-8 space-x-reverse">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="text-gray-800 hover:text-primary font-medium transition-colors"
+            >
+              الرئيسية
+            </a>
+            <a
+              href="#latest"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#latest')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-gray-800 hover:text-primary font-medium transition-colors"
+            >
+              أحدث الأخبار
+            </a>
+            <a
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="text-gray-800 hover:text-primary font-medium transition-colors"
+            >
+              من نحن
+            </a>
           </nav>
+
 
           {/* Social */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
+            <a href="https://www.facebook.com/OnlyLibya" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
               <Facebook size={20} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
+            <a href="https://www.instagram.com/therealonlylibya/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
               <Instagram size={20} />
             </a>
           </div>
@@ -55,10 +83,10 @@ const Header = () => {
               <a href="#about" className="text-gray-800 hover:text-primary font-medium transition-colors px-4">من نحن</a>
               
               <div className="flex items-center space-x-4 px-4 py-2">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
+                <a href="https://www.facebook.com/OnlyLibya" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
                   <Facebook size={20} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
+                <a href="https://www.instagram.com/therealonlylibya/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600">
                   <Instagram size={20} />
                 </a>
               </div>

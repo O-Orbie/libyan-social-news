@@ -1,50 +1,11 @@
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import NewsSection from "@/components/NewsSection";
 import ClickableNewsCard from "@/components/ClickableNewsCard";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import { allArticles } from "@/def/articles";
 
-// Mock data for news articles
-const latestNews = [
-  {
-    id: 1,
-    title: "افتتاح مشروع الطريق الدائري الجديد في طرابلس",
-    description: "تم الإعلان عن افتتاح مشروع الطريق الدائري الجديد في العاصمة الليبية طرابلس، والذي يهدف إلى تخفيف الازدحام المروري.",
-    category: "محلي",
-    date: "14 مايو 2025",
-    time: "09:30",
-    image: "https://images.unsplash.com/photo-1612207149578-2072b157d523?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 2,
-    title: "مباحثات دولية حول تطوير القطاع النفطي الليبي",
-    description: "عقدت مباحثات دولية في جنيف بمشاركة وفد ليبي رفيع المستوى لبحث سبل تطوير القطاع النفطي وزيادة الإنتاج.",
-    category: "اقتصاد",
-    date: "13 مايو 2025",
-    time: "15:45",
-    image: "https://images.unsplash.com/photo-1582435726303-525048e40355?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 3,
-    title: "افتتاح معرض ليبيا الدولي للكتاب في بنغازي",
-    description: "شهدت مدينة بنغازي افتتاح فعاليات معرض ليبيا الدولي للكتاب بمشاركة دور نشر محلية وعربية وأجنبية.",
-    category: "ثقافة",
-    date: "12 مايو 2025",
-    time: "11:20",
-    image: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 4,
-    title: "إنجاز ليبي جديد في المسابقة العالمية للعلوم والتكنولوجيا",
-    description: "حقق الفريق الليبي إنجازاً مهماً في المسابقة العالمية للعلوم والتكنولوجيا التي أقيمت في سنغافورة هذا الأسبوع.",
-    category: "تعليم",
-    date: "11 مايو 2025",
-    time: "14:15",
-    image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=800"
-  },
-];
 
 // Custom NewsSection with clickable cards
 const ClickableNewsSection = ({ title, description, articles, featured = false, id }) => {
@@ -86,7 +47,7 @@ const Index = () => {
         id="latest"
         title="أحدث الأخبار"
         description="تابع آخر المستجدات والأحداث المحلية والعالمية"
-        articles={latestNews}
+        articles={allArticles}
         featured={true}
       />
       

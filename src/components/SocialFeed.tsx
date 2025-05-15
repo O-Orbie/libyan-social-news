@@ -65,12 +65,12 @@ const SocialFeed = () => {
                 <Instagram size={24} className="text-pink-600" />
                 <span>Instagram</span>
               </h3>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@libya_news</a>
+              <a href="https://www.instagram.com/therealonlylibya/?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@libya_news</a>
             </div>
             
             <div className="grid grid-cols-3 gap-2">
               {instagramPosts.map(post => (
-                <a key={post.id} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="block group relative">
+                <a key={post.id} href="https://www.instagram.com/therealonlylibya/?hl=en" target="_blank" rel="noopener noreferrer" className="block group relative">
                   <img 
                     src={post.image} 
                     alt={`Instagram post ${post.id}`}
@@ -88,7 +88,7 @@ const SocialFeed = () => {
             </div>
             
             <Button variant="outline" className="w-full" asChild>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/therealonlylibya/?hl=en" target="_blank" rel="noopener noreferrer">
                 <Instagram size={18} className="mr-2" />
                 متابعة على انستغرام
               </a>
@@ -102,7 +102,7 @@ const SocialFeed = () => {
                 <Facebook size={24} className="text-blue-600" />
                 <span>Facebook</span>
               </h3>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@libya_news</a>
+              <a href="https://www.facebook.com/OnlyLibya" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@libya_news</a>
             </div>
             
             <div className="space-y-3">
@@ -127,7 +127,7 @@ const SocialFeed = () => {
             </div>
             
             <Button variant="outline" className="w-full" asChild>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/OnlyLibya" target="_blank" rel="noopener noreferrer">
                 <Facebook size={18} className="mr-2" />
                 متابعة على فيسبوك
               </a>
