@@ -20,11 +20,13 @@ const NewsCard = ({ title, description, category, date, time, image, featured = 
         <img
           src={image}
           alt={title}
-          className={`w-full object-cover ${featured ? 'h-64' : 'h-48'}`}
+          className={'w-full h-[400px] object-contain bg-black/10 rounded-lg'}
         />
+        {category ?
         <Badge className="absolute top-3 right-3 bg-primary text-primary-foreground">
           {category}
-        </Badge>
+        </Badge> : null
+        }
       </div>
       
       <CardHeader className="px-4 md:px-6 pb-0">
